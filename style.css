@@ -10,6 +10,23 @@ html, body {
     height: 100%;
     width: 100%;      
 }
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+#cursor-blur{
+    height: 500px;
+    width: 500px;
+    background-color: #96c11e2b;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+}
 
 #nav{
     height: 145px;
@@ -50,6 +67,7 @@ video{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    z-index: 10;
     
 }
 #page1 h1{
@@ -63,7 +81,7 @@ video{
     color: black;
     top: -6px;
     left: -6px;
-    -webkit-text-stroke: 1px #95c11e ;
+    -webkit-text-stroke: 1px solid #95c11e ;
     z-index: -1;
 }
 #page1 h2{
@@ -80,4 +98,5 @@ video{
 #page2{
     height: 100vh;
     width: 100%;
+    z-index: 10;
 }
