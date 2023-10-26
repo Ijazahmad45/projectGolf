@@ -327,3 +327,44 @@ video{
     bottom: 30%; 
     right: 15%;
 }
+#page4{
+    height: 30vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.elem{
+    height: 55%;
+    width: 26%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.elem h2{
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 800;
+    color: #000;
+    background-color: #95c11e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 20px;
+    transition:all ease 0.7s ;
+    z-index: 10;
+}
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.elem:hover h2{
+    color: #fff;
+    background-color: transparent;
+}
